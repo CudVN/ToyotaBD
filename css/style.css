@@ -4,7 +4,7 @@ h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
 html, body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background:#fff;
 	font-size: 100%;
 }
@@ -159,7 +159,7 @@ body a{
 	margin: 0;
 	z-index: 10;
 	padding: 5px 20px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 13px;
 	color: #ffffff;
 }
@@ -1219,7 +1219,7 @@ p.m_8{
 	padding: 10px;
 	width:95%;
 	font-size: 0.85em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 10px 0;
 	border: none;
 	color: #888;
@@ -1241,7 +1241,7 @@ p.m_8{
 	margin: 10px 0;
 	border: none;
 	color: #888;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	outline: none;
 	background:#F8F8F8;
 	height: 100px;
@@ -1254,7 +1254,7 @@ p.m_8{
 }
 .form-submit input[type="submit"] {
 	color: #FFF;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 0.95em;
 	font-weight: normal;
 	padding:15px 40px;
@@ -1373,7 +1373,7 @@ p.m_10{
 	margin-bottom:5%;
 }
 .btn_form form input[type="submit"] {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	cursor: pointer;
 	border: none;
 	outline: none;
@@ -1464,7 +1464,7 @@ p.price2{
 	padding:0;
 }
 .prosuct-qty select {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	border: 1px solid #EEE;
 	padding: 5% 41%;
 	font-size: 1em;
@@ -1472,7 +1472,7 @@ p.price2{
 }
 .prosuct-qty option {
 	border: 1px solid #EEE;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .box-info-product .exclusive {
 	border:none;
@@ -1600,7 +1600,7 @@ h4.title {
 	padding: 10px 20px;
 	cursor: pointer;
 	float: right;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	outline: none;
 	font-size: 1em;
 }
@@ -1622,7 +1622,7 @@ input.inputbox, input.required, div.k2AccountPage input[type="text"] {
 	color: inherit;
 	padding: 7px 20px;
 	width: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 0.85em;
 }
 .remember {
@@ -1638,7 +1638,7 @@ fieldset.input input[type="submit"] {
 	padding: 10px 30px;
 	cursor: pointer;
 	float: right;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	outline: none;
 	font-size:1em;
 }
@@ -1681,7 +1681,7 @@ fieldset.input input[type="submit"]:hover {
 	width: 96%;
 	font-size: 1em;
 	padding: 0.5em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .checkbox {
 	margin-bottom: 4px;
@@ -1765,7 +1765,7 @@ fieldset.input input[type="submit"]:hover {
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	display: inline-block;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	cursor: pointer;
 	outline: none;
 	text-transform: uppercase;
