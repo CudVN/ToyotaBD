@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Toyota Bình Dương</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery.min.js"></script>
+	<!--<script src="js/jquery.easydropdown.js"></script>-->
+	<!--start slider -->
+	<link rel="stylesheet" href="css/fwslider.css" media="all">
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/fwslider.js"></script>
+	<!--end slider -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".dropdown img.flag").addClass("flagvisibility");
+
+			$(".dropdown dt a").click(function () {
+				$(".dropdown dd ul").toggle();
+			});
+
+			$(".dropdown dd ul li a").click(function () {
+				var text = $(this).html();
+				$(".dropdown dt a span").html(text);
+				$(".dropdown dd ul").hide();
+				$("#result").html("Selected value is: " + getSelectedValue("sample"));
+			});
+
+			function getSelectedValue(id) {
+				return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function (e) {
+				var $clicked = $(e.target);
+				if (!$clicked.parents().hasClass("dropdown"))
+					$(".dropdown dd ul").hide();
+			});
+
+
+			$("#flagSwitcher").click(function () {
+				$(".dropdown img.flag").toggleClass("flagvisibility");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-left">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="" /></a>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<div class="header_right">
+						<!-- start search-->
+						<div class="menu">
+							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+
+								<li><a href="shop.html">Sản phẩm</a></li>
+								<li><a href="team.html">Dịch vụ</a></li>
+								<li><a href="experiance.html">Khuyến mãi</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<!-- start slider -->
+		<div id="fwslider">
+			<div class="slider_container">
+				<div class="slide">
+					<!-- Slide image -->
+					<img src="images/slider1.jpg" class="img-responsive" alt="" />
+					<!-- /Slide image -->
+					<!-- Texts container -->
+
+					<!-- /Texts container -->
+				</div>
+				<!-- /Duplicate to create more slides -->
+				<div class="slide">
+					<img src="images/slider2.jpg" class="img-responsive" alt="" />
+
+				</div>
+				<!--/slide -->
+			</div>
+			<div class="timers"></div>
+			<div class="slidePrev"><span></span></div>
+			<div class="slideNext"><span></span></div>
+		</div>
+		<!--/slider -->
+	</div>
+	<div class="main">
+		<div class="content-top">
+			<h2>XE MỚI</h2>
+			<hr width="30%">
+			<ul id="flexiselDemo3">
+				<li><img src="images/board1.jpg" /></li>
+				<li><img src="images/board2.jpg" /></li>
+				<li><img src="images/board3.jpg" /></li>
+				<li><img src="images/board4.jpg" /></li>
+				<li><img src="images/board5.jpg" /></li>
+			</ul>
+			<h3><a href="shop.html">Xem tất cả</a></h3>
+			<script type="text/javascript">
+				$(window).load(function () {
+					$("#flexiselDemo3").flexisel({
+						visibleItems: 3,
+						animationSpeed: 1000,
+						autoPlay: true,
+						autoPlaySpeed: 3000,
+						pauseOnHover: true,
+						enableResponsiveBreakpoints: true,
+						responsiveBreakpoints: {
+							portrait: {
+								changePoint: 480,
+								visibleItems: 1
+							},
+							landscape: {
+								changePoint: 640,
+								visibleItems: 2
+							},
+							tablet: {
+								changePoint: 768,
+								visibleItems: 3
+							}
+						}
+					});
+
+				});
+			</script>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+				<div class="col-md-7">
+					<h3><br></h3>
+					<p class="m_1"></p>
+					<p class="m_2"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 style="color: red;" class="m_3">KHUYẾN MÃI</h3>
+			<hr>
+			<div class="row">
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="experiance.html">
+							<img src="images/pic1.jpg" class="img-responsive" alt="" />
+							<div class="mask mask-1"> </div>
+							<div class="mask mask-2"> </div>
+							<div class="content">
+								<h2>[TFSVN] Ưu đãi lãi suất dành cho khách hàng mua xe Raize</h2>
+								<p>Lãi suất từ 3.99%</p>
+							</div>
+						</a>
+					</div>
+					<h4 class="m_4"><a href="#">[TFSVN] Ưu đãi lãi suất dành cho khách hàng mua xe Raize</a></h4>
+					<p class="m_5">Lãi suất từ 3.99%</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="experiance.html">
+							<img src="images/pic2.jpg" class="img-responsive" alt="" />
+							<div class="mask mask-1"> </div>
+							<div class="mask mask-2"> </div>
+							<div class="content">
+								<h2>[Fortuner] Tặng 13 tháng bảo hiểm gói Vàng</h2>
+								<p>Áp dụng đối với Toyota Fortuner 2.4AT 4x2, Toyota Fortuner Legender 2.4AT 4x2 hoặc Toyota Fortuner Legender 2.8AT 4x4</p>
+							</div>
+						</a> </div>
+					<h4 class="m_4"><a href="#">[ Fortuner] Tặng 13 tháng bảo hiểm gói Vàng</a></h4>
+					<p class="m_5">Áp dụng đối với Toyota Fortuner 2.4AT 4x2, Toyota Fortuner Legender 2.4AT 4x2 hoặc Toyota Fortuner Legender 2.8AT 4x4</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="experiance.html">
+							<img src="images/pic3.jpg" class="img-responsive" alt="" />
+							<div class="mask mask-1"> </div>
+							<div class="mask mask-2"> </div>
+							<div class="content">
+								<h2>[Corolla Altis] Hỗ trợ 40 triệu đồng lệ phí trước bạ</h2>
+								<p>Áp dụng đối với Corolla Altis 1.8E CVT và Corolla Altis 1.8G CVT</p>
+							</div>
+						</a> </div>
+					<h4 class="m_4"><a href="#">[Corolla Altis] Hỗ trợ 40 triệu đồng lệ phí trước bạ</a></h4>
+					<p class="m_5">Áp dụng đối với Corolla Altis 1.8E CVT và Corolla Altis 1.8G CVT</p>
+				</div>
+				<div class="col-md-3 top_box1">
+					<div class="view view-ninth"><a href="experiance.html">
+							<img src="images/pic4.jpg" class="img-responsive" alt="" />
+							<div class="mask mask-1"> </div>
+							<div class="mask mask-2"> </div>
+							<div class="content">
+								<h2>[Innova] Hỗ trợ 15 triệu đồng lệ phí trước bạ</h2>
+								<p>Áp dụng đối với Innova 2.0E MT và Innova 2.0G AT</p>
+							</div>
+						</a> </div>
+					<h4 class="m_4"><a href="#">[Innova] Hỗ trợ 15 triệu đồng lệ phí trước bạ</a></h4>
+					<p class="m_5">Áp dụng đối với Innova 2.0E MT và Innova 2.0G AT</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="footer_box">
+						<h4>Công ty CP Toyota Bình Dương</h4>
+						<li><a href="#">Mã số thuế: 3701984269</a></li>
+						<li><a href="#">Ngày cấp: 29/12/2014</a></li>
+						<li><a href="#">Cơ quan cấp: Sở Kế Hoạch Đầu Tư Tỉnh Bình Dương.</a></li>
+						<li><a href="#">Địa chỉ: Lô C13 A, đường Hùng Vương, P. Hòa Phú, TP. Thủ Dầu Một, Tỉnh Bình
+								Dương.</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="footer_box">
+						<h4>Thông tin</h4>
+						<li><a href="shop.html">Sản phẩm</a></li>
+						<li><a href="team.html">Dịch vụ</a></li>
+						<li><a href="experiance.html">Khuyến mãi</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Đường dây nóng</h4>
+						<li><a href="#">Điện thoại: 1900 633 697</a></li>
+						<li><a href="#">Email: cskh@toyota.binhduong.vn</a></li>
+						<li><a href="#">Hotline bán hàng: 1900 633 697 - phím 4</a></li>
+						<li><a href="#">Hotline CSKH: 1900 633 697 - phím 6</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nhận tin tức</h4>
+						<div class="footer_search">
+							<form>
+								<input type="text" value="Nhập email của bạn" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Nhập email của bạn';}">
+								<input type="submit" value="Gửi">
+							</form>
+						</div>
+						<ul class="social">
+							<li class="facebook"><a href="https://www.facebook.com/binhduongtoyota"><span> </span></a></li>
+							<li class="instagram"><a href="https://www.instagram.com/toyotabinhduong_thanhphomoi/"><span> </span></a></li>
+							<li class="pinterest"><a href="https://oa.zalo.me/875284821968910157"><span> </span></a></li>
+							<li class="youtube"><a href="https://www.youtube.com/channel/UCCZqGQcOYxfqkrkLAhOemJg"><span> </span></a></li>
+						</ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+					<p>© 2021 Template by <a href="http://fb.com/nguyenhuuduc9x" target="_blank">Toyota Bình Dương</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="zalo-chat-widget" data-oaid="875284821968910157" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+		data-autopopup="0" data-width="" data-height=""></div>
+
+	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Liên hệ - Toyota Bình Dương</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".dropdown img.flag").addClass("flagvisibility");
+
+			$(".dropdown dt a").click(function () {
+				$(".dropdown dd ul").toggle();
+			});
+
+			$(".dropdown dd ul li a").click(function () {
+				var text = $(this).html();
+				$(".dropdown dt a span").html(text);
+				$(".dropdown dd ul").hide();
+				$("#result").html("Selected value is: " + getSelectedValue("sample"));
+			});
+
+			function getSelectedValue(id) {
+				return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function (e) {
+				var $clicked = $(e.target);
+				if (!$clicked.parents().hasClass("dropdown"))
+					$(".dropdown dd ul").hide();
+			});
+
+
+			$("#flagSwitcher").click(function () {
+				$(".dropdown img.flag").toggleClass("flagvisibility");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-left">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="" /></a>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<div class="header_right">
+						<!-- start search-->
+						<div class="menu">
+							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+								<li><a href="shop.html">Sản phẩm</a></li>
+								<li><a href="team.html">Dịch vụ</a></li>
+								<li><a href="experiance.html">Khuyến mãi</a></li>
+								<li class="current"><a href="contact.html">Liên hệ</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="shop_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="map">
+							<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0"
+								marginwidth="0"
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3915.859276681089!2d106.6805998!3d11.0491757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d02a34a1a351%3A0xf966f26d8d4d856e!2zVG95b3RhIELDrG5oIETGsMahbmc!5e0!3m2!1svi!2s!4v1637805175761!5m2!1svi!2s"
+								width="600" height="450" style="border:0;" allowfullscreen=""
+								loading="lazy"></iframe><br><small><a
+									href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3915.859276681089!2d106.6805998!3d11.0491757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d02a34a1a351%3A0xf966f26d8d4d856e!2zVG95b3RhIELDrG5oIETGsMahbmc!5e0!3m2!1svi!2s!4v1637805175761!5m2!1svi!2s"
+									style="color:#666;text-align:left;font-size:12px"></a></small>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<p class="m_8">
+						<h3>Công ty Cổ Phần Toyota Bình Dương.</h3>
+						</p>
+						<div class="address">
+							<p>Địa chỉ: Lô C13 A, đường Hùng Vương, P. Hòa Phú, TP. Thủ Dầu Một, Tỉnh Bình Dương</p>
+							<p>Mã số thuế: 3701984269</p>
+							<p>Cơ quan cấp: Sở Kế Hoạch Đầu Tư Tỉnh Bình Dương. </p>
+							<p>Ngày cấp: 29/12/2014</p>
+							<a href=”tel:1900633697″>Hotline: 1900 633 697</a>
+							<p>*Email chăm sóc khách hàng: <span> cskh@toyota.binhduong.vn</span></p>
+						</div>
+					</div>
+				</div>
+			<!-- 	<div class="row">
+ -->
+
+					<iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSfgkTJg-5H0nUqTmcJhMdsmrlOCSOQSdQ10A7_y4qOdcDAAJA/viewform?embedded=true"
+					width="100%" height="1402" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+
+					<!-- <div class="col-md-12 contact">
+						<form method="post" action="contact-post.html">
+							<div class="to">
+								<input type="text" class="text" value="Họ tên" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Họ tên';}">
+								<input type="text" class="text" value="Số điện thoại" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Số điện thoại';}">
+								<input type="text" class="text" value="Email" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Email';}">
+							</div>
+							<div class="text">
+								<textarea value="Message:" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Message';}">Nội dung:</textarea>
+								<div class="form-submit">
+									<input name="submit" type="submit" id="submit" value="Gửi"><br>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div> -->
+			<!-- 	</div>-->
+
+				
+
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="footer_box">
+						<h4>Công ty CP Toyota Bình Dương</h4>
+						<li><a href="#">Mã số thuế: 3701984269</a></li>
+						<li><a href="#">Ngày cấp: 29/12/2014</a></li>
+						<li><a href="#">Cơ quan cấp: Sở Kế Hoạch Đầu Tư Tỉnh Bình Dương.</a></li>
+						<li><a href="#">Địa chỉ: Lô C13 A, đường Hùng Vương, P. Hòa Phú, TP. Thủ Dầu Một, Tỉnh Bình
+								Dương.</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="footer_box">
+						<h4>Thông tin</h4>
+						<li><a href="shop.html">Sản phẩm</a></li>
+						<li><a href="team.html">Dịch vụ</a></li>
+						<li><a href="experiance.html">Khuyến mãi</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Đường dây nóng</h4>
+						<li><a href="#">Điện thoại: 1900 633 697</a></li>
+						<li><a href="#">Email: cskh@toyota.binhduong.vn</a></li>
+						<li><a href="#">Hotline bán hàng: 1900 633 697 - phím 4</a></li>
+						<li><a href="#">Hotline CSKH: 1900 633 697 - phím 6</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nhận tin tức</h4>
+						<div class="footer_search">
+							<form>
+								<input type="text" value="Nhập email của bạn" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Nhập email của bạn';}">
+								<input type="submit" value="Gửi">
+							</form>
+						</div>
+						<ul class="social">
+							<li class="facebook"><a href="#"><span> </span></a></li>
+							<li class="twitter"><a href="#"><span> </span></a></li>
+							<li class="instagram"><a href="#"><span> </span></a></li>
+							<li class="pinterest"><a href="#"><span> </span></a></li>
+							<li class="youtube"><a href="#"><span> </span></a></li>
+						</ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+					<p>© 2021 Template by <a href="http://fb.com/nguyenhuuduc9x" target="_blank">Toyota Bình Dương</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="zalo-chat-widget" data-oaid="875284821968910157" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+		data-autopopup="0" data-width="" data-height=""></div>
+
+	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+	
+</body>
+
+</html>

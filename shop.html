@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sản phẩm - Toyota Bình Dương</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 		
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="menu">
+						<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+								<li class="current"><a href="shop.html">Sản phẩm</a></li>
+								<li><a href="team.html">Dịch vụ</a></li>
+								<li><a href="experiance.html">Khuyến mãi</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>								
+								<div class="clear"></div>
+							</ul>
+						<script type="text/javascript" src="js/responsive-nav.js"></script>
+			 		</div>							    
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row shop_box-top">
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic5.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Raize</a></h3>
+						<p>SUV </p>
+						<span class="actual">Từ 527 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic6.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Corolla Cross</a></h3>
+						<p>SUV</p>
+						<span class="actual">Từ 720 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic7.jpg" class="img-responsive" alt=""/>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Ưu đãi</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Vios</a></h3>
+						<p>Sedan </p>
+						<span class="actual">Từ 478 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic8.jpg" class="img-responsive" alt=""/>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Ưu đãi</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Innova</a></h3>
+						<p>Đa dụng </p>
+						<span class="actual">Từ 750 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic9.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Hilux</a></h3>
+						<p>Bán tải </p>
+						<span class="actual">Từ 628 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic10.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					<span class="sale-box">
+						<span class="sale-label">Ưu đãi</span>
+					</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Fortuner</a></h3>
+						<p>SUV </p>
+						<span class="actual">Từ 995 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic11.jpg" class="img-responsive" alt=""/>
+					<span class="sale-box">
+						<span class="sale-label">Ưu đãi</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Rush</a></h3>
+						<p>SUV </p>
+						<span class="actual">Từ 634 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic12.jpg" class="img-responsive" alt=""/>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Camry</a></h3>
+						<p>Sedan </p>
+						<span class="actual">Từ 1.029 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+			</div>
+			<div class="row">
+			<div class="row shop_box-top">
+			<div style="height: 55px;"></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic13.jpg" class="img-responsive" alt=""/>
+					<span class="sale-box">
+						<span class="sale-label">Ưu đãi</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Corolla Altis</a></h3>
+						<p>Sendan </p>
+						<span class="actual">Từ 733 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic14.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Land Cruiser Prado</a></h3>
+						<p>SUV </p>
+						<span class="actual">Từ 2.548 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic15.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Land Cruiser</a></h3>
+						<p>SUV </p>
+						<span class="actual">Từ 4.060 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic16.jpg" class="img-responsive" alt=""/>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Wigo</a></h3>
+						<p>Hatchback </p>
+						<span class="actual">Từ 352 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+					</div>
+				</a></div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="row shop_box-top">
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic17.jpg" class="img-responsive" alt=""/>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Yaris</a></h3>
+						<p>Hatchback </p>
+						<span class="actual">Từ 668 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</a></div>
+				<div class="col-md-3 shop_box"><a href="single.html">
+					<img src="images/pic18.jpg" class="img-responsive" alt=""/>
+					<span class="new-box">
+						<span class="new-label">Mới</span>
+					</span>
+					</span>
+					<div class="shop_desc">
+						<h3><a href="#">Toyota Alphard</a></h3>
+						<p>Đa dụng </p>
+						<span class="actual">Từ 4.240 triệu đồng</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="https://sites.google.com/view/tbd-raize/baogia?authuser=0">Nhận báo giá</a></li>
+							<li class="shop_btn"><a href="contact.html">Liên hệ</a></li>
+							<div class="clear"> </div>
+					    </ul>
+					</div>
+				</a></div>
+			</div>
+			</div>
+			<div class="row">
+				    </div>
+				</a></div>
+			</div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="footer_box">
+						<h4>Công ty CP Toyota Bình Dương</h4>
+						<li><a href="#">Mã số thuế: 3701984269</a></li>
+						<li><a href="#">Ngày cấp: 29/12/2014</a></li>
+						<li><a href="#">Cơ quan cấp: Sở Kế Hoạch Đầu Tư Tỉnh Bình Dương.</a></li>
+						<li><a href="#">Địa chỉ: Lô C13 A, đường Hùng Vương, P. Hòa Phú, TP. Thủ Dầu Một, Tỉnh Bình Dương.</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="footer_box">
+						<h4>Thông tin</h4>
+						<li><a href="shop.html">Sản phẩm</a></li>
+						<li><a href="team.html">Dịch vụ</a></li>
+						<li><a href="experiance.html">Khuyến mãi</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Đường dây nóng</h4>
+						<li><a href="#">Điện thoại: 1900 633 697</a></li>
+						<li><a href="#">Email: cskh@toyota.binhduong.vn</a></li>
+						<li><a href="#">Hotline bán hàng: 1900 633 697 - phím 4</a></li>
+						<li><a href="#">Hotline CSKH: 1900 633 697 - phím 6</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nhận tin tức</h4>
+						<div class="footer_search">
+						   <form>
+							<input type="text" value="Nhập email của bạn" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nhập email của bạn';}">
+							<input type="submit" value="Gửi">
+						   </form>
+						</div>
+						<ul class="social">	
+						  <li class="facebook"><a href="#"><span> </span></a></li>
+						  <li class="twitter"><a href="#"><span> </span></a></li>
+						  <li class="instagram"><a href="#"><span> </span></a></li>	
+						  <li class="pinterest"><a href="#"><span> </span></a></li>	
+						  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						</ul>
+						   
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+				   <p>© 2021 Template by <a href="http://fb.com/nguyenhuuduc9x" target="_blank">Toyota Bình Dương</a></p>
+				</div>					 
+			   </div>
+		</div>
+	</div>
+
+	<div class="zalo-chat-widget" data-oaid="875284821968910157" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+		data-autopopup="0" data-width="" data-height=""></div>
+
+	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</body>	
+</html>
